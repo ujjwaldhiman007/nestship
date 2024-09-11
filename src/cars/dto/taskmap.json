@@ -1,0 +1,139 @@
+{
+  "orderId": "1223",
+  "awbNumber": "",
+  "orderType": "",
+  "orderParty": "",
+  "serviceType": "COD",
+  "sourceLocationDetails": {
+    "representativePersonName": "Ujjwal",
+    "unitName": "car collection",
+    "contactNumPrimary": "827209110",
+    "gstNumber": "gstin1234567890",
+    "addres": {
+      "addressLine1": "",
+      "addressLine2": "",
+      "addressLine3": "",
+      "city": "gurugram",
+      "state": "harayana",
+      "pincode": "251001",
+      "latitude": "",
+      "longitude": ""
+    }
+  },
+  "destinationLocationDeatils": {
+    "representativePersonName": "Ujjwal",
+    "unitName": "car collection",
+    "contactNumPrimary": "827209110",
+    "gstNumber": "gstin1234567890",
+    "addres": {
+      "addressLine1": "",
+      "addressLine2": "",
+      "addressLine3": "",
+      "city": "gurugram",
+      "state": "harayana",
+      "pincode": "251001",
+      "latitude": "",
+      "longitude": ""
+    }
+  },
+  "billToLocationDetails": {
+    "representativePersonName": "Ujjwal",
+    "unitName": "car collection",
+    "contactNumPrimary": "827209110",
+    "gstNumber": "gstin1234567890",
+    "addres": {
+      "addressLine1": "",
+      "addressLine2": "",
+      "addressLine3": "",
+      "city": "gurugram",
+      "state": "harayana",
+      "pincode": "251001",
+      "latitude": "",
+      "longitude": ""
+    }
+  },
+  "returnLocationDetails": {
+    "representativePersonName": "Ujjwal",
+    "unitName": "car collection",
+    "contactNumPrimary": "827209110",
+    "gstNumber": "gstin1234567890",
+    "addres": {
+      "addressLine1": "",
+      "addressLine2": "",
+      "addressLine3": "",
+      "city": "gurugram",
+      "state": "harayana",
+      "pincode": "251001",
+      "latitude": "",
+      "longitude": ""
+    }
+  },
+
+  "boxDetails": {
+    "numOfBoxes": 5,
+    "deadWeightGrams": 15000,
+    "volumetricWeightGrams": 17000,
+    "boxList": [
+      {
+        "packageId": "PKG001",
+        "awbNumber": "AWB123456789",
+        "weight": 2.5,
+        "weightUnit": "kg",
+        "length": 40.5,
+        "width": 30.2,
+        "height": 20.3,
+        "dimensionUnit": "CM",
+        "imageUrl": "https://example.com/package1.jpg"
+      },
+      {
+        "packageId": "PKG002",
+        "awbNumber": "AWB987654321",
+        "weight": 1.8,
+        "weightUnit": "kg",
+        "length": 35.0,
+        "width": 25.5,
+        "height": 15.0,
+        "dimensionUnit": "CM",
+        "imageUrl": "https://example.com/package2.jpg"
+      }
+    ]
+  },
+
+"googsDetails": {
+    "goodsAmountPaise": 1000000,
+    "googsTaxAmountPaise": 180000,
+    "totalGoodsAmountPaise": 1180000,
+    "goodsDetailsList": [
+      {
+        "itemTitle": "Men's T-Shirt",
+        "hsnCode": "61091000",
+        "unitPricePaise": 50000,
+        "unitQty": 20
+      },
+      {
+        "itemTitle": "Women's Jeans",
+        "hsnCode": "62046200",
+        "unitPricePaise": 150000,
+        "unitQty": 10
+      }
+    ]
+  },
+
+  "invoiceDetails": {
+    "invoiceIds": [
+      {
+        "invoiceId": "INV001",
+        "ewaybillNo": "EXAMPLE123456789"
+      }
+    ]
+  },
+
+  "orderCollectionDetails": {
+    "collectibleAmountPaise": 1200000,
+    "serviceType": "Cod"
+  },
+
+  "orderNotes": "Deliver between 9 AM to 5 PM. Handle with care."
+
+
+}

@@ -1,0 +1,118 @@
+{
+  "serviceType": "Cod",
+  "handOverMode": "String",
+  "returnShipmentFlag": "false",
+  "Shipment": {
+    "code": "String",
+    "SaleOrderCode": "String",
+    "orderCode": "String",
+    "channelCode": "String",
+    "channelName": "String",
+    "source": "unicommerce",
+    "customField": [],
+    "invoiceCode": "String",
+    "orderDate": "16-Sep-2021 00:00:00",
+    "fullFilllmentTat": "18-Sep-2021 00:00:00",
+    "weight": "53.4000",
+    "length": "30",
+    "height": "10",
+    "breadth": "15",
+    "numberOfBoxes": "1",
+    "items": [
+      {
+        "name": "String",
+        "description": "String",
+        "quantity": 2,
+        "skuCode": "string",
+        "itemPrice": 600.0,
+        "imageURL": "string",
+        "hsnCode": "string",
+        "tags": "string",
+        "brand": "string",
+        "color": "string",
+        "category": "string",
+        "size": "string",
+        "item_details": "string",
+        "ean": ""
+      },
+      {
+        "name": "String",
+        "description": "String",
+        "quantity": 1,
+        "skuCode": "string",
+        "itemPrice": 600.0,
+        "imageURL": "string",
+        "hsnCode": "string",
+        "tags": "string",
+        "brand": "string",
+        "color": "string",
+        "category": "string",
+        "size": "string",
+        "item_details": "string",
+        "ean": ""
+      }
+    ]
+  },
+  "deliveryAddressId": "String",
+  "deliveryAddressDetails": {
+    "name": "String",
+    "email": "String",
+    "phone": "8888888888",
+    "address1": "String",
+    "address2": "String",
+    "pincode": "122016",
+    "city": "Gurgaon",
+    "state": "Haryana",
+    "country": "India",
+    "stateCode": "HR",
+    "countryCode": "IN",
+    "gstin": "string",
+    "alternatePhone": "9090909090",
+    "district": ""
+  },
+  "pickupAddressId": "String",
+  "pickupAddressDetails": {
+    "name": "String",
+    "email": "String",
+    "phone": "9999999999",
+    "address1": "String",
+    "address2": "String",
+    "pincode": "400092",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "country": "India",
+    "stateCode": "MH",
+    "countryCode": "IN",
+    "gstin": "string"
+  },
+  "returnAddressId": "String",
+  "returnAddressDetails": {
+    "name": "String",
+    "email": "String",
+    "phone": "9999999999",
+    "address1": "String",
+    "address2": "String",
+    "pincode": "400092",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "country": "India",
+    "stateCode": "HR",
+    "countryCode": "IN",
+    "gstin": "string"
+  },
+  "currencyCode": "INR",
+  "paymentMode": "PREPAID",
+  "totalAmount": "200.00",
+  "collectableAmount": "0",
+  "courierName": "String",
+  "customField": [
+    {
+      "name": "String",
+      "value": "String"
+    },
+    {
+      "name": "String",
+      "value": "String"
+    }
+  ]
+}

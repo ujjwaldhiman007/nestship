@@ -1,37 +1,39 @@
 import { Injectable } from '@nestjs/common';
-import { Car } from './dto/create-car.dto';
-import { response } from 'express';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { Car } from 'src/database/pg/entities/car.entity';
 
 @Injectable()
 export class CarsService {
-  private cars: Car[] = [];
+  constructor(
+    @InjectRepository(Car)
+    private carRepository: Repository<Car>,
+  ) {}
 
-  // get all cars
-
-  findAll(): Car[] {
-    return this.cars;
-    
+  findAll(): Promise<Car[]> {
+    return this.carRepository.find();
   }
 
-  findOne(id: number): Car {
-    return this.cars.find((car) => car.id === id);
+  findOne(id: number): Promise<Car | null> {
+    return this.carRepository.findOneBy({ id });
   }
 
-  // let;s create a new car
-  create(car: Car) {
-    this.cars.push(car);
+  create(carData: Partial<Car>): Promise<Car> {
+    const newCar = this.carRepository.create(carData);
+    return this.carRepository.save(newCar);
   }
 
-  // update a car by ID
-  update(id: number, updateCarDto: Car) {
-    const carIndex = this.cars.findIndex((car) => car.id === id);
-    if (carIndex > -1) {
-      this.cars[carIndex] = updateCarDto;
-    }
+  createCars(carData: Partial<Car>[]): Promise<Car[]> {
+    const newCars = this.carRepository.create(carData);
+    return this.carRepository.save(newCars);
   }
 
-  // Delete a car by id
-  delete(id: number) {
-    this.cars = this.cars.filter((car) => car.id !== id);
+  async update(id: number, carData: Partial<Car>): Promise<Car | null> {
+    await this.carRepository.update(id, carData);
+    return this.carRepository.findOneBy({ id });
+  }
+
+  async remove(id: number): Promise<void> {
+    await this.carRepository.delete(id);
   }
 }
